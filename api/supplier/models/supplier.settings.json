@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "supplier",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "integer"
+    },
+    "CVR": {
+      "type": "integer"
+    },
+    "country": {
+      "type": "string"
+    },
+    "supplier_items": {
+      "collection": "supplier-items"
+    }
+  }
+}
